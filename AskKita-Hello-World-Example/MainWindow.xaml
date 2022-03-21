@@ -1,0 +1,17 @@
+﻿<Window x:Class="AskKita_Hello_World_Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AskKita_Hello_World_Example"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="Askkita-Hello-World-Example" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ask-kita-background-default.png" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+        <Image x:Name="Microphone" HorizontalAlignment="Left" Height="157" VerticalAlignment="Top" Width="132" Source="mic.png" MouseDown="Microphone_Click" Margin="250,177,0,0"/>
+        <TextBlock x:Name="MicTextBlock" TextAlignment="Center"  FontSize="18" Foreground="Black" FontWeight="Bold" RenderTransformOrigin="0.504,0.516" Margin="122,329,290,0" Height="30" VerticalAlignment="Top"><Run Text="c"/><Run Text="lick "/><Run Text="to start "/></TextBlock>
+    </Grid>
+</Window>
