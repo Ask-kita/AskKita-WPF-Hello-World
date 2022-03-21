@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 
 namespace AskKita_Hello_World_Example
 {
@@ -12,7 +13,6 @@ namespace AskKita_Hello_World_Example
         private void Microphone_Click(object sender, RoutedEventArgs e)
         {
             bool kitaIsRunning = AskKita.kitaChangeState();
-
             if (kitaIsRunning)
             {
                 MicTextBlock.Text = "click to stop";

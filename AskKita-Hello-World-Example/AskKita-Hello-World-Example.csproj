@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ask_kita\**" />
+    <EmbeddedResource Remove="ask_kita\**" />
+    <None Remove="ask_kita\**" />
+    <Page Remove="ask_kita\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ask-kita-background-default.png" />
     <None Remove="mic.png" />
   </ItemGroup>
